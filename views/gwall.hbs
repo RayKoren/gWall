@@ -1,2 +1,18 @@
 <h1>SUH DUDE?!?</h1>
-<img src="https://m.popkey.co/09003a/bgR6K.gif" alt="" />
+<h2><a href="/gwall/post">Post A Suh Dude!</a></h2>
+<h2><a href="/">Go Back</a></h2>
+
+<img src="https://m.popkey.co/09003a/bgR6K.gif" alt="" class="suhGif"/>
+<ul>
+  {{#each posts}}
+  <li>
+    <h4>
+      {{this.name}}
+    </h4>  
+    <img src="{{this.image}}" alt="" />
+    <p>
+      {{this.rant}}
+    </p>
+  </li>
+  {{/each}}
+</ul>
